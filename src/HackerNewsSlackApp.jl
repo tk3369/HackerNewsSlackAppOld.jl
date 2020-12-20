@@ -17,7 +17,7 @@ debug(logger, msg) = println(now(), " ", msg)
 const LOGGER = nothing
 
 # installed web hook
-const WEB_HOOK_URL = "https://hooks.slack.com/services/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"
+const WEB_HOOK_URL = ENV["HACKER_NEWS_SLACK_WEB_HOOK"]
 
 # what to monitor
 struct Monitor
